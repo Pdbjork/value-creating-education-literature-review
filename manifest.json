@@ -1,0 +1,110 @@
+{
+  "$schema": "./manifest.schema.json",
+  "schemaVersion": 1,
+  "collection": {
+    "id": "value-creating-education-literature-review",
+    "title": "Value-Creating Education Literature Review Documents",
+    "description": "Six research-informed printable documents on Tsunesaburo Makiguchi, Josei Toda, and Daisaku Ikeda, organized for future literature-review and collaboration platforms.",
+    "language": "en",
+    "publicationStatus": "working-handouts",
+    "preparedBy": {
+      "name": "Peter Bjork",
+      "credentials": "M.Ed.",
+      "affiliation": "DePaul University - College of Education",
+      "program": "PhD in Value-Creating Education for Global Citizens",
+      "display": "Prepared by Peter Bjork, M.Ed., DePaul University - College of Education - PhD in Value-Creating Education for Global Citizens"
+    }
+  },
+  "documents": [
+    {
+      "id": "makiguchi-day-to-day-education",
+      "figure": "Tsunesaburo Makiguchi",
+      "title": "Makiguchi’s Ideas in Day-to-Day Education",
+      "shortTitle": "Makiguchi: Day-to-Day Education",
+      "documentType": "educator-guide",
+      "stance": "application-and-synthesis",
+      "summary": "A classroom translation of Makiguchi’s value-creating pedagogy, including value creation, teacher practice, lesson design, and practical guardrails.",
+      "tags": ["Makiguchi", "value creation", "pedagogy", "classroom practice", "teacher education"],
+      "formats": {
+        "html": "documents/makiguchi-day-to-day-education/index.html",
+        "pdf": "documents/makiguchi-day-to-day-education/printable.pdf"
+      },
+      "pageCount": 2
+    },
+    {
+      "id": "makiguchi-opposing-ideas-and-major-critics",
+      "figure": "Tsunesaburo Makiguchi",
+      "title": "Makiguchi: Opposing Ideas and Major Critics",
+      "shortTitle": "Makiguchi: Critics",
+      "documentType": "critical-perspectives",
+      "stance": "critical-analysis",
+      "summary": "Intellectual alternatives, practical objections, and contested interpretations surrounding Makiguchi’s educational thought and later reception.",
+      "tags": ["Makiguchi", "criticism", "intellectual history", "Soka education", "critical perspectives"],
+      "formats": {
+        "html": "documents/makiguchi-opposing-ideas-and-major-critics/index.html",
+        "pdf": "documents/makiguchi-opposing-ideas-and-major-critics/printable.pdf"
+      },
+      "pageCount": 3
+    },
+    {
+      "id": "toda-contributions-to-education",
+      "figure": "Josei Toda",
+      "title": "Josei Toda’s Contributions to Education",
+      "shortTitle": "Toda: Educational Contributions",
+      "documentType": "historical-synthesis",
+      "stance": "contributions-and-limits",
+      "summary": "An evidence-qualified account of Toda as teacher, methods writer, publisher, organizer, and transmitter of value-creating education.",
+      "tags": ["Toda", "Makiguchi", "value-creating education", "educational history", "peace education"],
+      "formats": {
+        "html": "documents/toda-contributions-to-education/index.html",
+        "pdf": "documents/toda-contributions-to-education/printable.pdf"
+      },
+      "pageCount": 3
+    },
+    {
+      "id": "toda-criticism-and-leading-critics",
+      "figure": "Josei Toda",
+      "title": "Josei Toda: Criticism and Leading Critics",
+      "shortTitle": "Toda: Critics",
+      "documentType": "critical-perspectives",
+      "stance": "critical-analysis",
+      "summary": "Educational, textual, religious, organizational, political, and peace-related objections to Toda’s work and legacy.",
+      "tags": ["Toda", "criticism", "Soka Gakkai", "religion and education", "peace studies"],
+      "formats": {
+        "html": "documents/toda-criticism-and-leading-critics/index.html",
+        "pdf": "documents/toda-criticism-and-leading-critics/printable.pdf"
+      },
+      "pageCount": 3
+    },
+    {
+      "id": "ikeda-secondary-school",
+      "figure": "Daisaku Ikeda",
+      "title": "A Secondary School for Value Creation",
+      "shortTitle": "Ikeda: Ideal Secondary School",
+      "documentType": "evidence-grounded-reconstruction",
+      "stance": "application-and-synthesis",
+      "summary": "An evidence-grounded reconstruction of an ideal classroom, lesson, teaching strategy, school day, and institutional culture under Ikeda’s philosophy.",
+      "tags": ["Ikeda", "secondary education", "global citizenship", "dialogue", "school design"],
+      "formats": {
+        "html": "documents/ikeda-secondary-school/index.html",
+        "pdf": "documents/ikeda-secondary-school/printable.pdf"
+      },
+      "pageCount": 4
+    },
+    {
+      "id": "ikeda-classroom-non-examples",
+      "figure": "Daisaku Ikeda",
+      "title": "Non-Examples of an Ikeda Classroom",
+      "shortTitle": "Ikeda: Classroom Non-Examples",
+      "documentType": "visual-field-guide",
+      "stance": "diagnostic-and-critical",
+      "summary": "A visual field guide to classroom practices that contradict dignity, dialogue, wisdom, contribution, and nonsectarian human education.",
+      "tags": ["Ikeda", "classroom observation", "non-examples", "dialogue", "humanistic education"],
+      "formats": {
+        "html": "documents/ikeda-classroom-non-examples/index.html",
+        "pdf": "documents/ikeda-classroom-non-examples/printable.pdf"
+      },
+      "pageCount": 3
+    }
+  ]
+}

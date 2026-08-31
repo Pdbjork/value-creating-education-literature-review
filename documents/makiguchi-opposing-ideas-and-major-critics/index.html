@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Makiguchi: Opposing Ideas and Major Critics</title>
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #52606d;
+      --accent: #7b2d26;
+      --accent-dark: #56201b;
+      --accent-soft: #f7eeec;
+      --blue: #254f68;
+      --blue-soft: #edf4f7;
+      --rule: #bdc7cd;
+      --paper: #fff;
+    }
+    * { box-sizing: border-box; }
+    @page { size: Letter; margin: 0.5in 0.58in 0.54in; }
+    html { background: #dfe5e8; }
+    body {
+      width: 8.5in;
+      margin: 24px auto;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 9.55pt;
+      line-height: 1.29;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    main { padding: 0.5in 0.58in 0.54in; }
+    header {
+      border-top: 7px solid var(--accent);
+      border-bottom: 1px solid var(--rule);
+      padding: 13px 0 11px;
+      margin-bottom: 12px;
+    }
+    .kicker {
+      margin: 0 0 3px;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 8pt;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: 23pt;
+      line-height: 1.05;
+      letter-spacing: -.02em;
+    }
+    .subtitle {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10.2pt;
+    }
+    .byline {
+      margin: 4px 0 0;
+      color: var(--accent);
+      font: 700 7.7pt/1.25 Arial, Helvetica, sans-serif;
+    }
+    h2 {
+      margin: 12px 0 5px;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12.1pt;
+      line-height: 1.18;
+    }
+    h3 {
+      margin: 8px 0 3px;
+      color: var(--blue);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 9.8pt;
+      line-height: 1.2;
+    }
+    p { margin: 0 0 6px; }
+    ul, ol { margin: 3px 0 7px 17px; padding: 0; }
+    li { margin: 0 0 2.5px; padding-left: 2px; }
+    a { color: var(--accent-dark); overflow-wrap: anywhere; }
+    .lead {
+      font-size: 10.6pt;
+      line-height: 1.36;
+    }
+    .note {
+      margin: 9px 0 11px;
+      padding: 8px 10px;
+      border-left: 4px solid var(--accent);
+      background: var(--accent-soft);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 9.1pt;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 6px 0 10px;
+      font-size: 8.25pt;
+      line-height: 1.22;
+    }
+    th {
+      background: var(--accent);
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: left;
+      font-size: 8pt;
+    }
+    th, td { border: 1px solid var(--rule); padding: 4.5px 5.5px; vertical-align: top; }
+    tr:nth-child(even) td { background: #f7f8f8; }
+    .page-break { break-before: page; page-break-before: always; }
+    .critique-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px 12px;
+      margin-top: 6px;
+    }
+    .critique {
+      border: 1px solid var(--rule);
+      border-top: 3px solid var(--blue);
+      padding: 8px 9px 7px;
+      break-inside: avoid;
+    }
+    .critique h3 { margin-top: 0; }
+    .critique p:last-child, .critic p:last-child { margin-bottom: 0; }
+    .question {
+      color: var(--muted);
+      font-style: italic;
+    }
+    .critic {
+      margin: 0 0 8px;
+      padding: 8px 10px;
+      border-left: 3px solid var(--accent);
+      background: #fafafa;
+      break-inside: avoid;
+    }
+    .critic h3 { margin-top: 0; color: var(--accent-dark); }
+    .label {
+      display: inline-block;
+      margin-left: 5px;
+      padding: 1px 5px;
+      border-radius: 9px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 7.4pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      vertical-align: 1px;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+    .two-col > section { break-inside: avoid; }
+    .state-box {
+      margin: 9px 0;
+      padding: 9px 11px;
+      background: var(--blue-soft);
+      border: 1px solid #abc1cc;
+      break-inside: avoid;
+    }
+    .state-box h2 { margin-top: 0; color: var(--blue); }
+    .bottom-line {
+      margin-top: 10px;
+      padding: 10px 12px;
+      background: var(--accent);
+      color: white;
+      font-size: 10.5pt;
+      line-height: 1.34;
+      break-inside: avoid;
+    }
+    .sources {
+      margin-top: 9px;
+      padding-top: 7px;
+      border-top: 1px solid var(--rule);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 7.7pt;
+      line-height: 1.28;
+      break-inside: avoid;
+    }
+    .sources h2 { margin-top: 0; font-size: 10.5pt; }
+    .sources li { margin-bottom: 3px; }
+    footer {
+      margin-top: 8px;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 7.5pt;
+    }
+    @media print {
+      html, body { background: white; }
+      body { width: auto; margin: 0; }
+      main { padding: 0; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="kicker">Critical perspectives handout</p>
+    <h1>Makiguchi: Opposing Ideas and Major Critics</h1>
+    <p class="subtitle">Intellectual alternatives, practical objections, and contested interpretations</p>
+    <p class="byline">Prepared by Peter Bjork, M.Ed., DePaul University - College of Education - PhD in Value-Creating Education for Global Citizens</p>
+  </header>
+
+  <p class="lead"><strong>Essential distinction:</strong> Makiguchi has clear intellectual opposites, but no universally recognized group of “main critics.” Much English-language scholarship is sympathetic or institutionally connected to Soka education. Strong criticism often targets later translations, religious reinterpretations, and idealized histories rather than his original pedagogy.</p>
+
+  <div class="note"><strong>Reading caution:</strong> “Opposing idea” does not necessarily mean “a thinker who directly attacked Makiguchi.” Several positions below are traditions that would challenge or qualify his framework today.</div>
+
+  <h2>Ideas in opposition</h2>
+  <table>
+    <thead>
+      <tr><th style="width:26%">Makiguchi’s emphasis</th><th style="width:36%">Opposing or qualifying position</th><th>Day-to-day result</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Education serves the learner’s happiness</strong></td><td><strong>State, economic, or social-efficiency education:</strong> schooling primarily serves national cohesion, workforce needs, or productivity.</td><td>Central targets, vocational sorting, common discipline, standardized measures.</td></tr>
+      <tr><td><strong>Learners create value</strong></td><td><strong>Essentialism and cultural transmission:</strong> students must first inherit knowledge they did not create.</td><td>Explicit teaching, prescribed content, cumulative sequences, retrieval practice.</td></tr>
+      <tr><td><strong>Value arises relationally</strong></td><td><strong>Moral or value realism:</strong> truth, beauty, and goodness possess objective or intrinsic worth.</td><td>Works and principles are taught even without immediate personal relevance.</td></tr>
+      <tr><td><strong>Begin with local experience</strong></td><td><strong>Disciplinary or canonical curriculum:</strong> a subject’s internal logic should determine sequence.</td><td>Prerequisites, chronology, canonical works, and systematic progression.</td></tr>
+      <tr><td><strong>Teacher autonomy</strong></td><td><strong>Standardization and accountability:</strong> common curricula protect quality and equity.</td><td>Scripted materials, common examinations, rubrics, comparable outcomes.</td></tr>
+      <tr><td><strong>Holistic value creation</strong></td><td><strong>Behaviorism and mastery:</strong> goals should be observable and measurable.</td><td>Small objectives, modeling, controlled practice, feedback, mastery checks.</td></tr>
+      <tr><td><strong>Personal and social good</strong></td><td><strong>Liberal neutrality:</strong> public schools should not prescribe the good life.</td><td>Rights, procedures, evidence, and autonomous choice take priority.</td></tr>
+      <tr><td><strong>Individuals transform circumstances</strong></td><td><strong>Critical pedagogy:</strong> circumstances are structured by institutions and power.</td><td>Analysis of control, class, race, gender, collective action, and reform.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>The central philosophical fault line</h2>
+  <div class="two-col">
+    <section>
+      <h3>Makiguchi’s claim</h3>
+      <p><strong>Truth is discovered; value is created.</strong> Truth concerns what is. Value concerns how something affects human life. He therefore used the triad <em>beauty, benefit, and goodness</em> rather than <em>truth, beauty, and goodness</em>.</p>
+    </section>
+    <section>
+      <h3>The objection</h3>
+      <p>Separating truth from value may make education too instrumental. A useful falsehood, an inconvenient truth, or knowledge without visible application tests whether benefit can adequately guide educational judgment.</p>
+    </section>
+  </div>
+
+  <div class="page-break"></div>
+
+  <header>
+    <p class="kicker">Critical perspectives</p>
+    <h1 style="font-size:20pt">The Strongest Educational Objections</h1>
+  </header>
+
+  <div class="critique-grid">
+    <article class="critique">
+      <h3>1. Happiness is indeterminate</h3>
+      <p>Happiness may mean pleasure, autonomy, flourishing, belonging, virtue, or security. These can conflict, leaving considerable authority with educators.</p>
+      <p class="question">Who defines happiness, and what happens when present comfort conflicts with future capability?</p>
+    </article>
+
+    <article class="critique">
+      <h3>2. Benefit can become instrumental</h3>
+      <p>If consequences determine value, knowledge, art, and moral duties may be judged mainly by visible utility. Rights can also resist calculations of collective benefit.</p>
+      <p class="question">Can something be educationally worthwhile even when it produces no immediate benefit?</p>
+    </article>
+
+    <article class="critique">
+      <h3>3. Novices need prior knowledge</h3>
+      <p>Meaningful inquiry depends on vocabulary, facts, concepts, and procedures. Weak implementations risk attractive projects with shallow or fragmented learning.</p>
+      <p class="question">What must be taught explicitly before students can investigate or create responsibly?</p>
+    </article>
+
+    <article class="critique">
+      <h3>4. Social good can conceal power</h3>
+      <p>A community’s definition of good may reflect its dominant group. Adaptation and service can reproduce hierarchy rather than challenge it.</p>
+      <p class="question">Who benefits, who decides, and can dissent itself create social value?</p>
+    </article>
+
+    <article class="critique">
+      <h3>5. Assessment is difficult</h3>
+      <p>“Value created” is contextual and may emerge long after a lesson. Subjective grading, weak comparability, workload, and uneven implementation become serious risks.</p>
+      <p class="question">What observable evidence distinguishes value creation from an engaging but educationally weak activity?</p>
+    </article>
+
+    <article class="critique">
+      <h3>6. Religion and secularity overlap</h3>
+      <p>Makiguchi’s educational work developed before and alongside his Nichiren Buddhism. Later presentations sometimes join them more closely than the early texts do.</p>
+      <p class="question">Can the pedagogy stand independently, and what belongs in a religiously plural public school?</p>
+    </article>
+  </div>
+
+  <h2>Named critics and critical interpreters</h2>
+
+  <article class="critic">
+    <h3>Noah S. Brannen <span class="label">Direct theory critique</span></h3>
+    <p>Brannen called the theory fundamentally utilitarian and argued that the posthumously edited <em>Theory of Value</em> contains a sharp discontinuity between humanistic value creation and claims that Nichiren faith is indispensable. He suspected Jōsei Toda’s editing introduced or reshaped religious passages.</p>
+    <p><strong>Limit:</strong> Brannen analyzed a Toda-edited postwar text, not an untouched Makiguchi manuscript, and wrote as a Christian missionary assessing a rival religious movement.</p>
+  </article>
+
+  <article class="critic">
+    <h3>Nozomi Inukai <span class="label">Translation critique</span></h3>
+    <p>Inukai found major omissions, simplifications, rearrangements, and undisclosed interventions in Dayle Bethel’s English <em>Education for Creative Living</em>. Her conclusion: the translation presents a “simpler, less sophisticated, less well-read” Makiguchi.</p>
+    <p><strong>Significance:</strong> This challenges English-language interpretations built on the Bethel edition, not necessarily Makiguchi’s original argument.</p>
+  </article>
+
+  <div class="page-break"></div>
+
+  <header>
+    <p class="kicker">Critical perspectives</p>
+    <h1 style="font-size:20pt">History, Institution, and a Balanced Judgment</h1>
+  </header>
+
+  <article class="critic">
+    <h3>Brian Victoria <span class="label">Historical narrative</span></h3>
+    <p>Victoria questions the later image of Makiguchi as an unequivocal antiwar pacifist. He points to statements supporting service to emperor and state and asks whether Makiguchi’s wartime resistance arose chiefly from opposition to compulsory State Shinto and defense of Nichiren commitments.</p>
+    <p><strong>Dispute:</strong> Kōichi Miyata argues that Victoria selected quotations narrowly and undervalued Makiguchi’s arrest under wartime thought-control law. The secure conclusion is limited: Makiguchi resisted compulsory religious conformity and died in prison; describing his entire career as modern antiwar pacifism requires qualification.</p>
+  </article>
+
+  <article class="critic">
+    <h3>Levi McLaughlin <span class="label">Institutional canonization</span></h3>
+    <p>McLaughlin examines how Soka Gakkai constructs its founding presidents as an authoritative lineage. His target is institutional storytelling: the transformation of a complex educator into a simplified founder, martyr, and model whose legacy is repeatedly reinterpreted.</p>
+  </article>
+
+  <article class="critic">
+    <h3>Andrew Gebert <span class="label">Critical contextualization</span></h3>
+    <p>Gebert reconstructs the ambiguity among Makiguchi’s educational, scientific, and religious language. He is better described as a critical historian than an opponent: his work resists reducing Makiguchi to either secular humanist or religious dogmatist.</p>
+  </article>
+
+  <div class="state-box">
+    <h2>The strongest historical opponent</h2>
+    <p>Makiguchi’s clearest contemporary opposition came from the <strong>Japanese imperial educational state</strong>, not a single famous philosopher. Its model placed national morality, loyalty, uniformity, and civic State Shinto above individual happiness and teacher autonomy. Thinkers such as <strong>Inoue Tetsujirō</strong>, who defended national morality and the Imperial Rescript on Education, represent the philosophical counter-position. The state and thought police, however, were persecutors—not participants in a balanced scholarly debate.</p>
+  </div>
+
+  <h2>A balanced critical position</h2>
+  <p>“Value creation” is a powerful educational aim but an incomplete instructional specification. A defensible contemporary version needs:</p>
+  <div class="two-col">
+    <ol>
+      <li>A robust account of knowledge and truth.</li>
+      <li>Explicit protection for rights and minorities.</li>
+      <li>Analysis of structural and institutional power.</li>
+    </ol>
+    <ol start="4">
+      <li>Clear curriculum and assessment criteria.</li>
+      <li>Transparent treatment of religious commitments.</li>
+      <li>Historically reliable texts and narratives.</li>
+    </ol>
+  </div>
+
+  <p class="bottom-line"><strong>Bottom line:</strong> Preserve Makiguchi’s strongest insight—that education should enlarge learners’ capacity to improve life—without treating “value creation” as a complete answer to every curricular, moral, or political question.</p>
+
+  <section class="sources">
+    <h2>Selected sources</h2>
+    <ol>
+      <li>Noah S. Brannen, “Soka Gakkai’s Theory of Value—An Analysis,” <em>Contemporary Religions in Japan</em> 5, no. 2 (1964), 143–154. nirc.nanzan-u.ac.jp/journal/15/article/1920/pdf/download</li>
+      <li>Nozomi Inukai, “Soka Kyoikugaku Taikei Versus Education for Creative Living,” <em>Journal of Language, Identity &amp; Education</em> 12, no. 1 (2013), 40–49. doi.org/10.1080/15348458.2013.748428</li>
+      <li>Brian Victoria, “Sōka Gakkai Founder, Makiguchi Tsunesaburō, A Man of Peace?” <em>Asia-Pacific Journal: Japan Focus</em> 12, no. 37 (2014). apjjf.org/2014/12/37/brian-victoria/4181/article</li>
+      <li>Kōichi Miyata, “Critical Comments on Brian Victoria’s ‘Engaged Buddhism: Skeleton in the Closet?’” <em>Journal of Global Buddhism</em>. doi.org/10.5281/zenodo.1310627</li>
+      <li>Levi McLaughlin, <em>Soka Gakkai’s Human Revolution: The Rise of a Mimetic Nation in Modern Japan</em> (University of Hawai‘i Press, 2019).</li>
+      <li>Andrew Gebert, “The Roots of Ambivalence,” <em>Religions</em> 13, no. 3 (2022): 260. doi.org/10.3390/rel13030260</li>
+    </ol>
+  </section>
+
+  <footer>Prepared as a concise critical companion to Makiguchi’s value-creating pedagogy. Distinguishes direct criticism from theoretical opposition and historical contextualization.</footer>
+</main>
+</body>
+</html>

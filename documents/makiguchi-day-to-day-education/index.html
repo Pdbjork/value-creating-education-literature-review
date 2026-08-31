@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Makiguchi’s Ideas in Day-to-Day Education</title>
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #52606d;
+      --accent: #184e77;
+      --accent-soft: #eaf3f8;
+      --rule: #b9c8d3;
+      --paper: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    @page { size: Letter; margin: 0.55in 0.62in 0.58in; }
+    html { background: #dfe5e8; }
+    body {
+      width: 8.5in;
+      margin: 24px auto;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 10.15pt;
+      line-height: 1.31;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    main { padding: 0.55in 0.62in 0.58in; }
+    header {
+      border-top: 7px solid var(--accent);
+      border-bottom: 1px solid var(--rule);
+      padding: 14px 0 12px;
+      margin-bottom: 14px;
+    }
+    .kicker {
+      margin: 0 0 3px;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 8.3pt;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: 24pt;
+      line-height: 1.05;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .subtitle {
+      margin: 7px 0 0;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.35;
+    }
+    .byline {
+      margin: 4px 0 0;
+      color: var(--accent);
+      font: 700 7.7pt/1.25 Arial, Helvetica, sans-serif;
+    }
+    h2 {
+      margin: 14px 0 6px;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12.2pt;
+      line-height: 1.2;
+    }
+    h3 {
+      margin: 9px 0 3px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10pt;
+      line-height: 1.25;
+    }
+    p { margin: 0 0 7px; }
+    strong { font-weight: 700; }
+    ul, ol { margin: 4px 0 8px 18px; padding: 0; }
+    li { margin: 0 0 3px; padding-left: 2px; }
+    .lead {
+      font-size: 11.1pt;
+      line-height: 1.38;
+    }
+    .definition {
+      margin: 10px 0 12px;
+      padding: 9px 11px;
+      border-left: 4px solid var(--accent);
+      background: var(--accent-soft);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 9.5pt;
+    }
+    .values {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin: 8px 0 12px;
+    }
+    .value-card {
+      border: 1px solid var(--rule);
+      border-radius: 3px;
+      padding: 8px 9px;
+      break-inside: avoid;
+    }
+    .value-card h3 { margin-top: 0; color: var(--accent); }
+    .value-card p { margin: 0; font-size: 9.3pt; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 7px 0 11px;
+      font-size: 8.9pt;
+      line-height: 1.27;
+    }
+    th {
+      background: var(--accent);
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: left;
+      font-size: 8.4pt;
+      letter-spacing: 0.02em;
+    }
+    th, td { border: 1px solid var(--rule); padding: 5px 6px; vertical-align: top; }
+    tr:nth-child(even) td { background: #f6f8f9; }
+    .lesson {
+      border: 1px solid var(--rule);
+      border-radius: 3px;
+      padding: 10px 12px 8px;
+      break-inside: avoid;
+    }
+    .lesson h2 { margin-top: 0; }
+    .lesson ol { columns: 2; column-gap: 28px; }
+    .lesson li { break-inside: avoid; }
+    .questions {
+      margin: 7px 0 10px;
+      padding: 9px 12px 8px 30px;
+      background: #f6f8f9;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      columns: 2;
+      column-gap: 26px;
+    }
+    .questions li { break-inside: avoid; margin-bottom: 5px; }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      align-items: start;
+    }
+    .two-col > section { break-inside: avoid; }
+    .cautions {
+      margin-top: 11px;
+      padding: 10px 12px;
+      border: 1px solid var(--rule);
+      border-left: 4px solid var(--accent);
+      break-inside: avoid;
+    }
+    .cautions h2 { margin-top: 0; }
+    .bottom-line {
+      margin: 12px 0 0;
+      padding: 10px 13px;
+      background: var(--accent);
+      color: white;
+      font-size: 11.1pt;
+      line-height: 1.36;
+      break-inside: avoid;
+    }
+    footer {
+      margin-top: 10px;
+      padding-top: 6px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 7.8pt;
+    }
+    @media print {
+      html, body { background: white; }
+      body { width: auto; margin: 0; }
+      main { padding: 0; }
+      header { margin-top: 0; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="kicker">Practical educator handout</p>
+    <h1>Makiguchi’s Ideas in Day-to-Day Education</h1>
+    <p class="subtitle">A classroom translation of Tsunesaburō Makiguchi’s value-creating pedagogy</p>
+    <p class="byline">Prepared by Peter Bjork, M.Ed., DePaul University - College of Education - PhD in Value-Creating Education for Global Citizens</p>
+  </header>
+
+  <p class="lead"><strong>Central idea:</strong> Education should help learners create value in their own lives and communities—not merely absorb information or comply with authority.</p>
+
+  <div class="definition"><strong>Value creation</strong> occurs when a learner uses knowledge, judgment, and action to transform a real situation constructively. It is not simply “values education,” constant enjoyment, or narrow job preparation.</div>
+
+  <div class="values">
+    <div class="value-card"><h3>Beauty</h3><p>Experiences that deepen perception, appreciation, and feeling.</p></div>
+    <div class="value-card"><h3>Benefit</h3><p>Learning that improves the learner’s life and capacity to act.</p></div>
+    <div class="value-card"><h3>Good</h3><p>Action that contributes to the well-being of other people and society.</p></div>
+  </div>
+
+  <h2>From principle to practice</h2>
+  <table>
+    <thead><tr><th style="width:31%">Makiguchi’s idea</th><th>What it means in daily practice</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Education should support happiness</strong></td><td>Look for increased agency, competence, connection, and meaningful participation—not merely comfort or high scores.</td></tr>
+      <tr><td><strong>Students create value</strong></td><td>Ask students to investigate, interpret, design, improve, explain, or use something. Do not reduce every lesson to explanation and recall.</td></tr>
+      <tr><td><strong>Begin with lived experience</strong></td><td>Start with local places, events, relationships, occupations, and problems; connect these concrete experiences to wider concepts.</td></tr>
+      <tr><td><strong>Knowledge is a means</strong></td><td>Teach facts and techniques rigorously, while making clear what students can understand, judge, or accomplish with them.</td></tr>
+      <tr><td><strong>The teacher is an expert guide</strong></td><td>Diagnose prior understanding, design worthwhile experiences, model difficult thinking, ask productive questions, and give timely support.</td></tr>
+      <tr><td><strong>Personal and social good are connected</strong></td><td>Regularly ask: Who benefits? Who may be harmed? What responsibility follows from what we know?</td></tr>
+      <tr><td><strong>Learning should be humane and efficient</strong></td><td>Reduce redundant memorization and exhausting seat time. Use class time for expert guidance, inquiry, feedback, and collaboration.</td></tr>
+      <tr><td><strong>Teachers are reflective professionals</strong></td><td>Treat lessons as hypotheses: observe student learning, compare evidence with intentions, discuss with colleagues, and revise practice.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="lesson">
+    <h2>Example lesson: percentages</h2>
+    <ol>
+      <li>Students compare real discounts, loan offers, food labels, or changes in a local budget.</li>
+      <li>They identify what needs to be calculated and why it matters.</li>
+      <li>The teacher explicitly models percentage methods and provides focused practice.</li>
+      <li>Students evaluate a claim or recommend the best option.</li>
+      <li>They explain both the calculation and its consequences for a real person.</li>
+      <li>Assessment checks accuracy, reasoning, application, and responsible judgment.</li>
+    </ol>
+    <p><strong>The distinction:</strong> Direct instruction and practice remain essential, but technique serves meaningful judgment rather than becoming the lesson’s entire purpose.</p>
+  </div>
+
+  <h2>Questions that can shape a lesson</h2>
+  <ol class="questions">
+    <li>What can we notice in our immediate environment?</li>
+    <li>What problem or possibility does this reveal?</li>
+    <li>What do we already know from experience?</li>
+    <li>What information or skill do we now need?</li>
+    <li>How could we use this learning?</li>
+    <li>What value could it create for us or others?</li>
+    <li>What evidence shows the effect of our action?</li>
+    <li>What should we revise?</li>
+  </ol>
+
+  <div class="two-col">
+    <section>
+      <h2>Curriculum and community</h2>
+      <p>Makiguchi emphasized geography as the study of relationships between people and their surroundings. Useful practices include:</p>
+      <ul>
+        <li>Neighborhood walks and field observations</li>
+        <li>Interviews with community members</li>
+        <li>Mapping resources, movement, and land use</li>
+        <li>Connecting local evidence to global systems</li>
+        <li>Projects integrating science, history, economics, language, art, and ethics</li>
+      </ul>
+      <p>The local setting is a concrete starting point—not a limit on students’ horizons.</p>
+    </section>
+
+    <section>
+      <h2>Assessment for capable action</h2>
+      <p>Alongside factual recall, ask whether the student can:</p>
+      <ul>
+        <li>Recognize when knowledge is relevant</li>
+        <li>Use it in a new situation</li>
+        <li>Make and explain a reasoned judgment</li>
+        <li>Collaborate while thinking independently</li>
+        <li>Evaluate consequences and revise work</li>
+      </ul>
+      <p>Evidence may include tests, explanations, demonstrations, portfolios, field notes, designs, performances, and community projects.</p>
+    </section>
+  </div>
+
+  <div class="two-col">
+    <section>
+      <h2>Relationships and discipline</h2>
+      <ul>
+        <li>Connect rules to the conditions needed for collective learning.</li>
+        <li>Examine conflict in terms of effects, responsibility, and repair.</li>
+        <li>Invite students to contribute to classroom life.</li>
+        <li>Protect learners from humiliation and arbitrary control.</li>
+      </ul>
+      <p>A useful restorative prompt: <em>What happened, who was affected, and how can value be restored?</em></p>
+    </section>
+
+    <section>
+      <h2>Teacher reflection</h2>
+      <ul>
+        <li>Study individual learners closely.</li>
+        <li>Collect evidence from actual lessons.</li>
+        <li>Compare outcomes with intentions.</li>
+        <li>Observe and learn with colleagues.</li>
+        <li>Adapt curriculum to local conditions.</li>
+        <li>Share effective practices without turning them into rigid scripts.</li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="cautions">
+    <h2>Three cautions</h2>
+    <p><strong>Happiness is not constant pleasure.</strong> Difficult practice, correction, frustration, and delayed gratification can create lasting value.</p>
+    <p><strong>Student-centered does not mean teacher-absent.</strong> Learners need structured knowledge, modeling, feedback, and carefully designed experiences.</p>
+    <p><strong>Useful does not mean narrowly employable.</strong> Art, literature, contemplation, history, and theory can create aesthetic, personal, and social value without immediate commercial application.</p>
+  </div>
+
+  <p class="bottom-line"><strong>Bottom line:</strong> Teach rigorous knowledge through meaningful encounters, help students use it to improve real situations, and judge educational success by the quality of life and social value that learners become capable of creating.</p>
+
+  <footer>Prepared as a concise classroom guide to Makiguchi’s educational thought. For study and professional discussion.</footer>
+</main>
+</body>
+</html>

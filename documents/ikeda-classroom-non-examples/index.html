@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Non-Examples of an Ikeda Classroom</title>
+<style>
+  @page { size: Letter; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #dfe5e5; }
+  body { font-family: Arial, Helvetica, sans-serif; color: #19313b; font-size: 9.2pt; line-height: 1.28; }
+  .sheet { width: 8.5in; height: 11in; margin: 0 auto 14px; padding: .43in .5in .38in; background: #fffdf8; overflow: hidden; position: relative; page-break-after: always; }
+  .sheet:last-child { page-break-after: auto; }
+  h1, h2, h3, p { margin-top: 0; }
+  h1 { margin-bottom: 7px; font-family: Georgia, serif; font-size: 28pt; line-height: 1; letter-spacing: -.5px; color: #153d4d; }
+  h2 { margin: 0 0 7px; font-family: Georgia, serif; font-size: 19pt; line-height: 1.05; color: #153d4d; }
+  h3 { margin: 0 0 4px; font-size: 9.7pt; line-height: 1.12; text-transform: uppercase; letter-spacing: .75px; color: #0b6b67; }
+  p { margin-bottom: 5px; }
+  ul { margin: 3px 0 5px 16px; padding: 0; }
+  li { margin-bottom: 2px; }
+  strong { color: #173f4d; }
+  .kicker { margin-bottom: 7px; color: #0b6b67; font-size: 8pt; font-weight: 800; letter-spacing: 1.8px; text-transform: uppercase; }
+  .rule { width: .66in; height: 4px; margin: 5px 0 9px; border-radius: 3px; background: #d7982d; }
+  .deck { max-width: 7in; margin-bottom: 10px; color: #4b6068; font-size: 10.6pt; line-height: 1.3; }
+  .byline { max-width: 7.15in; margin: -4px 0 9px; color: #0b6b67; font-size: 7.8pt; line-height: 1.2; font-weight: 700; letter-spacing: .15px; }
+  .small { font-size: 8.2pt; }
+  .tiny { font-size: 7.2pt; line-height: 1.2; color: #586b71; }
+  .label { display: inline-block; padding: 2px 6px 1px; border-radius: 10px; color: #fff; background: #153d4d; font-size: 6.7pt; line-height: 1.2; font-weight: 800; letter-spacing: .6px; vertical-align: 1px; }
+  .label.proposal { background: #c98520; }
+  .label.practice { background: #0b6b67; }
+  .note { padding: 7px 9px; border: 1px solid #d4dede; border-left: 5px solid #d7982d; border-radius: 7px; background: #fafcfb; color: #465b62; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
+  .grid32 { display: grid; grid-template-columns: 1.45fr 1fr; gap: 9px; }
+  .grid23 { display: grid; grid-template-columns: 1fr 1.45fr; gap: 9px; }
+  .box { padding: 8px 9px; border: 1px solid #c7d6d5; border-radius: 9px; background: #fff; }
+  .soft { background: #eff6f4; border-color: #b9d4cf; }
+  .warm { background: #fff5dd; border-color: #e2c477; }
+  .coral { background: #fff0e9; border-color: #e3b19d; }
+  .ink { background: #153d4d; border-color: #153d4d; color: #fff; }
+  .ink h3, .ink strong { color: #fff; }
+  .ink p { color: #e8f2f2; }
+  .footer { position: absolute; left: .5in; right: .5in; bottom: .16in; display: flex; justify-content: space-between; color: #6a7c82; font-size: 7pt; }
+  .page-no { color: #153d4d; font-weight: 800; }
+  .compass { display: grid; grid-template-columns: repeat(4,1fr); gap: 6px; margin: 8px 0 10px; }
+  .principle { min-height: 70px; padding: 7px 8px; border-radius: 8px; border-top: 5px solid #0b6b67; background: #eff6f4; }
+  .principle:nth-child(2) { border-top-color: #d7982d; background: #fff5dd; }
+  .principle:nth-child(3) { border-top-color: #d56e4c; background: #fff0e9; }
+  .principle:nth-child(4) { border-top-color: #153d4d; background: #edf1f3; }
+  .principle b { display: block; margin-bottom: 3px; font-size: 8.8pt; }
+  .principle span { display: block; color: #4d6269; font-size: 7.2pt; line-height: 1.17; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
+  .card { min-height: 210px; padding: 8px; border: 1px solid #d7c3ba; border-radius: 10px; background: #fff; position: relative; }
+  .card-head { display: grid; grid-template-columns: 84px 1fr; gap: 8px; align-items: center; margin-bottom: 6px; }
+  .card h3 { color: #a34b34; font-size: 10.2pt; letter-spacing: .45px; }
+  .card .why { margin: 5px 0; padding: 5px 6px; border-left: 3px solid #d56e4c; background: #fff3ee; color: #46585f; font-size: 7.5pt; }
+  .card .shift { padding: 5px 6px; border-left: 3px solid #0b6b67; background: #edf7f4; color: #40565d; font-size: 7.5pt; }
+  .card ul { font-size: 7.6pt; line-height: 1.18; }
+  .card svg { display: block; width: 84px; height: 70px; border-radius: 7px; background: #fff0e9; }
+  .svg-stroke { fill: none; stroke: #153d4d; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  .svg-fill { fill: #d56e4c; }
+  .svg-soft { fill: #f7d6c9; }
+  .svg-teal { fill: #83bdb2; }
+  .badge { display: inline-block; min-width: 19px; height: 19px; margin-right: 5px; padding-top: 3px; border-radius: 50%; background: #a34b34; color: white; font-weight: 800; font-size: 7.5pt; text-align: center; vertical-align: 1px; }
+  .truthband { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; margin-top: 9px; }
+  .truth { padding: 7px 8px; border: 1px solid #c6d7d4; border-radius: 8px; background: #eff6f4; font-size: 7.6pt; }
+  .truth b { color: #0b6b67; }
+  .versus { display: grid; grid-template-columns: 1fr 26px 1fr; gap: 5px; align-items: stretch; margin-bottom: 6px; }
+  .vbad, .vgood { padding: 6px 7px; border-radius: 7px; font-size: 7.3pt; line-height: 1.16; }
+  .vbad { background: #fff0e9; border: 1px solid #e5b5a3; }
+  .vgood { background: #eff6f4; border: 1px solid #bdd6d1; }
+  .arr { display: flex; align-items: center; justify-content: center; color: #c98520; font-size: 16pt; font-weight: 800; }
+  .notban { display: grid; grid-template-columns: repeat(4,1fr); gap: 6px; margin-top: 6px; }
+  .tool { min-height: 92px; padding: 7px; border-radius: 8px; background: #fff; border: 1px solid #cfdada; }
+  .tool b { display: block; margin-bottom: 3px; color: #153d4d; }
+  .tool .yes { color: #0b6b67; font-size: 6.9pt; line-height: 1.15; }
+  .tool .no { display: block; margin-top: 4px; padding-top: 4px; border-top: 1px solid #e0e6e5; color: #a34b34; font-size: 6.9pt; line-height: 1.15; }
+  .observer { width: 100%; border-collapse: collapse; font-size: 7.6pt; line-height: 1.18; }
+  .observer th { padding: 6px; background: #153d4d; color: #fff; text-align: left; }
+  .observer td { padding: 6px; border-bottom: 1px solid #d8e2e1; vertical-align: top; }
+  .observer tr:nth-child(even) td { background: #f4f8f7; }
+  .observer .red { width: 46%; color: #8e4634; font-weight: 700; }
+  .observer .green { color: #155f5a; }
+  .funnel { display: grid; grid-template-columns: 1fr 28px 1fr 28px 1fr; gap: 4px; align-items: center; margin: 6px 0; }
+  .funnel div:not(.arr) { min-height: 60px; padding: 7px; border-radius: 8px; text-align: center; background: #edf1f3; border: 1px solid #bdcbd1; font-size: 7.2pt; }
+  .funnel div:nth-child(3) { background: #fff5dd; border-color: #e0c274; }
+  .funnel div:nth-child(5) { background: #eff6f4; border-color: #bad4cf; }
+  .funnel b { display: block; margin-bottom: 3px; }
+  .sources { columns: 2; column-gap: 16px; font-size: 6.75pt; line-height: 1.2; color: #50636a; }
+  .sources p { margin-bottom: 5px; break-inside: avoid; }
+  .sources a { color: #16596a; text-decoration: none; }
+  .write-lines { margin-top: 5px; }
+  .line { height: 19px; border-bottom: 1px solid #bdc9ca; }
+  @media print { html, body { background: white; } .sheet { margin: 0; } }
+</style>
+</head>
+<body>
+
+<section class="sheet">
+  <div class="kicker">Visual field guide · secondary education</div>
+  <h1>Non-Examples of<br>an Ikeda Classroom</h1>
+  <div class="rule"></div>
+  <p class="deck">A classroom moves away from Daisaku Ikeda’s philosophy when it diminishes dignity, substitutes conformity for dialogue, separates knowledge from humane purpose or mistakes comfort for happiness.</p>
+  <p class="byline">Prepared by Peter Bjork, M.Ed., DePaul University - College of Education - PhD in Value-Creating Education for Global Citizens</p>
+
+  <div class="note small"><span class="label proposal">SYNTHESIS</span> Ikeda did not publish a checklist of classroom “non-examples.” These contrasts are reasoned implications of his stated commitments to teacher–student trust, dialogue, value creation, global citizenship and knowledge directed toward happiness and peace.</div>
+
+  <h3 style="margin-top:9px">The four-point diagnostic compass</h3>
+  <div class="compass">
+    <div class="principle"><b>DIGNITY</b><span>Is each learner treated as capable of growth—not as a score, problem or follower?</span></div>
+    <div class="principle"><b>DIALOGUE</b><span>Can students question, dissent, listen and revise without coercion?</span></div>
+    <div class="principle"><b>WISDOM</b><span>Is rigorous knowledge joined to judgment, responsibility and consequence?</span></div>
+    <div class="principle"><b>CONTRIBUTION</b><span>Does learning enlarge agency and benefit rather than status alone?</span></div>
+  </div>
+
+  <div class="cards">
+    <article class="card">
+      <div class="card-head">
+        <svg viewBox="0 0 84 70" aria-label="Megaphone speaking to identical figures">
+          <path class="svg-soft" d="M6 9h72v52H6z"/>
+          <path class="svg-fill" d="M13 18l26 8v13l-26 8z"/>
+          <path class="svg-stroke" d="M13 18v29M39 26v13M18 45l4 12h8l-5-14M47 23h22M47 32h22M47 41h22"/>
+          <circle cx="51" cy="53" r="4" class="svg-teal"/><circle cx="60" cy="53" r="4" class="svg-teal"/><circle cx="69" cy="53" r="4" class="svg-teal"/>
+        </svg>
+        <div><h3><span class="badge">1</span>The indoctrination classroom</h3><p class="tiny">Belief is prescribed; inquiry is treated as disloyalty.</p></div>
+      </div>
+      <ul><li>Students must praise Ikeda, Buddhism or the institution.</li><li>Approved conclusions precede the evidence.</li><li>Religious participation affects belonging or success.</li></ul>
+      <div class="why"><strong>Why misaligned:</strong> Ikeda stated that education does not exist for religion and opposed sectarian schooling.</div>
+      <div class="shift"><strong>Better shift:</strong> Study philosophies critically; protect freedom of conscience; assess reasoning, not profession of belief.</div>
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <svg viewBox="0 0 84 70" aria-label="Teacher elevated above students">
+          <path class="svg-soft" d="M6 9h72v52H6z"/>
+          <path class="svg-stroke" d="M43 13v24M32 37h23M35 26h16M21 50h43M29 43h27"/>
+          <circle cx="43" cy="18" r="6" class="svg-fill"/>
+          <circle cx="18" cy="56" r="4" class="svg-teal"/><circle cx="31" cy="56" r="4" class="svg-teal"/><circle cx="53" cy="56" r="4" class="svg-teal"/><circle cx="66" cy="56" r="4" class="svg-teal"/>
+        </svg>
+        <div><h3><span class="badge">2</span>The teacher on a throne</h3><p class="tiny">Authority outranks truth; error invites shame.</p></div>
+      </div>
+      <ul><li>The teacher controls every interpretation.</li><li>Students comply publicly and disengage privately.</li><li>Mistakes become evidence of fixed ability.</li></ul>
+      <div class="why"><strong>Why misaligned:</strong> Ikeda described teachers as partners in discovery and placed trust at the center of education.</div>
+      <div class="shift"><strong>Better shift:</strong> Keep adult responsibility and subject expertise while modeling fallibility, listening and mutual growth.</div>
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <svg viewBox="0 0 84 70" aria-label="Exam papers moving on a conveyor belt">
+          <path class="svg-soft" d="M6 9h72v52H6z"/>
+          <rect x="17" y="14" width="22" height="27" rx="2" fill="#fff" stroke="#153d4d" stroke-width="2"/>
+          <path class="svg-stroke" d="M22 21h12M22 27h12M22 33h8M11 48h62M17 55h50"/>
+          <circle cx="24" cy="52" r="5" class="svg-fill"/><circle cx="60" cy="52" r="5" class="svg-fill"/>
+          <path class="svg-stroke" d="M46 20l5 5 10-12"/>
+        </svg>
+        <div><h3><span class="badge">3</span>The examination factory</h3><p class="tiny">Scores, rank and credentials become the purpose.</p></div>
+      </div>
+      <ul><li>Recall crowds out explanation and application.</li><li>Competition defines human worth.</li><li>No one asks what the knowledge enables.</li></ul>
+      <div class="why"><strong>Why misaligned:</strong> Knowledge is indispensable, but Ikeda argued that wisdom must direct it toward happiness and peace.</div>
+      <div class="shift"><strong>Better shift:</strong> Use tests diagnostically; require mastery, reasoning, transfer and reflection on consequence.</div>
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <svg viewBox="0 0 84 70" aria-label="Empty classroom with disconnected activities">
+          <path class="svg-soft" d="M6 9h72v52H6z"/>
+          <rect x="11" y="16" width="19" height="15" rx="2" fill="#fff" stroke="#153d4d" stroke-width="2"/>
+          <rect x="52" y="38" width="20" height="15" rx="2" fill="#fff" stroke="#153d4d" stroke-width="2"/>
+          <circle cx="44" cy="23" r="7" class="svg-teal"/>
+          <path class="svg-stroke" d="M21 39v14M12 46h18M52 19l13 8M35 41l10 10"/>
+          <path d="M42 58l-5-8h10z" class="svg-fill"/>
+        </svg>
+        <div><h3><span class="badge">4</span>The content-free “student-centered” room</h3><p class="tiny">Choice replaces teaching; activity replaces learning.</p></div>
+      </div>
+      <ul><li>The teacher withholds necessary explanation.</li><li>Projects are engaging but conceptually thin.</li><li>Students rehearse misconceptions unaided.</li></ul>
+      <div class="why"><strong>Why misaligned:</strong> Belief in potential demands serious intellectual support, not adult absence.</div>
+      <div class="shift"><strong>Better shift:</strong> Model difficult knowledge explicitly, then expand student agency through inquiry and application.</div>
+    </article>
+  </div>
+
+  <div class="footer"><span>Non-examples are contradictions of purpose and relationship—not bans on particular teaching tools</span><span class="page-no">1 / 3</span></div>
+</section>
+
+<section class="sheet">
+  <div class="kicker">Failure modes · continued</div>
+  <h2>When humane language hides inhumane practice</h2>
+  <p class="deck small">Some classrooms appear progressive, caring or globally minded while still suppressing difference, lowering expectations or avoiding responsibility.</p>
+
+  <div class="cards">
+    <article class="card">
+      <div class="card-head">
+        <svg viewBox="0 0 84 70" aria-label="Dialogue circle with identical speech bubbles">
+          <path class="svg-soft" d="M6 9h72v52H6z"/>
+          <circle cx="42" cy="35" r="21" class="svg-stroke"/>
+          <circle cx="42" cy="13" r="4" class="svg-fill"/><circle cx="63" cy="35" r="4" class="svg-fill"/><circle cx="42" cy="57" r="4" class="svg-fill"/><circle cx="21" cy="35" r="4" class="svg-fill"/>
+          <path class="svg-stroke" d="M31 29h22M31 35h22M31 41h22"/>
+        </svg>
+        <div><h3><span class="badge">5</span>The forced-consensus circle</h3><p class="tiny">Everyone may speak—provided they reach the approved view.</p></div>
+      </div>
+      <ul><li>Dissent is labeled negative or uncompassionate.</li><li>Listening is performative.</li><li>Harmony matters more than accuracy.</li></ul>
+      <div class="why"><strong>Why misaligned:</strong> Ikeda’s global citizen needs courage to encounter difference and grow from it.</div>
+      <div class="shift"><strong>Better shift:</strong> Require evidence and fair listening; allow principled disagreement and visible revision without forced closure.</div>
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <svg viewBox="0 0 84 70" aria-label="Comfort bubble around student and challenge outside">
+          <path class="svg-soft" d="M6 9h72v52H6z"/>
+          <circle cx="35" cy="35" r="22" fill="#fff5dd" stroke="#d7982d" stroke-width="2"/>
+          <circle cx="35" cy="29" r="6" class="svg-teal"/>
+          <path class="svg-stroke" d="M24 48c3-9 19-9 22 0M59 17l6 9-8 2 7 9M59 48l8-7"/>
+        </svg>
+        <div><h3><span class="badge">6</span>Happiness as comfort</h3><p class="tiny">Challenge and candid feedback are removed to protect feelings.</p></div>
+      </div>
+      <ul><li>Productive struggle is treated as harm.</li><li>Standards fall quietly for selected students.</li><li>Difficult realities are covered with optimism.</li></ul>
+      <div class="why"><strong>Why misaligned:</strong> Value-creating happiness is the capacity to make meaning and benefit amid difficulty—not permanent ease.</div>
+      <div class="shift"><strong>Better shift:</strong> Combine psychological safety with ambitious work, specific support and honest feedback.</div>
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <svg viewBox="0 0 84 70" aria-label="Open gate while harm continues">
+          <path class="svg-soft" d="M6 9h72v52H6z"/>
+          <path class="svg-stroke" d="M16 55V18h21v37M47 55V18h21v37M37 23l10 8M47 23l-10 8"/>
+          <circle cx="27" cy="33" r="5" class="svg-teal"/><circle cx="58" cy="42" r="5" class="svg-fill"/>
+          <path class="svg-stroke" d="M27 38v11M58 47v8M50 33l8-5 8 5"/>
+        </svg>
+        <div><h3><span class="badge">7</span>Compassion without courage</h3><p class="tiny">Harm is excused because the person causing it is struggling.</p></div>
+      </div>
+      <ul><li>Victims carry the burden of “understanding.”</li><li>Boundaries disappear.</li><li>Restorative language replaces accountability.</li></ul>
+      <div class="why"><strong>Why misaligned:</strong> Ikeda links compassion with courageous engagement; dignity applies to everyone affected.</div>
+      <div class="shift"><strong>Better shift:</strong> Stop harm, establish facts, hear impact, require repair and support a responsible return.</div>
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <svg viewBox="0 0 84 70" aria-label="Camera framing a gift while community is outside frame">
+          <path class="svg-soft" d="M6 9h72v52H6z"/>
+          <rect x="18" y="20" width="38" height="27" rx="4" fill="#fff" stroke="#153d4d" stroke-width="2"/>
+          <circle cx="37" cy="33" r="8" class="svg-teal"/>
+          <path class="svg-stroke" d="M27 20l4-6h13l5 6M57 24h8v19h-8M26 51h40"/>
+          <path d="M33 30h8v8h-8z" class="svg-fill"/>
+        </svg>
+        <div><h3><span class="badge">8</span>Charity theatre and global tourism</h3><p class="tiny">Students collect experiences, gratitude or publicity—not understanding.</p></div>
+      </div>
+      <ul><li>Communities become objects of service.</li><li>Flags and food replace history and power.</li><li>The project ends when the photograph is taken.</li></ul>
+      <div class="why"><strong>Why misaligned:</strong> Global citizenship requires interdependence, empathy and action—not paternalism or cultural consumption.</div>
+      <div class="shift"><strong>Better shift:</strong> Co-design work with communities; examine structural causes; return useful products and sustain relationships.</div>
+    </article>
+  </div>
+
+  <div class="grid32" style="margin-top:9px">
+    <div class="box soft">
+      <h3>Correct the hidden substitution</h3>
+      <div class="versus"><div class="vbad"><strong>Conformity</strong><br>“We all agree.”</div><div class="arr">→</div><div class="vgood"><strong>Dialogue</strong><br>“We understand the disagreement and its evidence.”</div></div>
+      <div class="versus"><div class="vbad"><strong>Comfort</strong><br>“Nothing should feel difficult.”</div><div class="arr">→</div><div class="vgood"><strong>Happiness</strong><br>“I can create value through difficulty.”</div></div>
+      <div class="versus"><div class="vbad"><strong>Sentiment</strong><br>“We care about the issue.”</div><div class="arr">→</div><div class="vgood"><strong>Contribution</strong><br>“Our knowledge enables a responsible action.”</div></div>
+    </div>
+    <div class="box warm">
+      <h3>Other warning signs</h3>
+      <ul class="small"><li><strong>Personality grading:</strong> rewarding extroversion, agreeableness or professed virtue.</li><li><strong>Public shame:</strong> defining a learner by one error or incident.</li><li><strong>False collaboration:</strong> confident students work while others copy.</li><li><strong>Inspiration without accuracy:</strong> uplifting conclusions resting on weak facts.</li><li><strong>Teacher martyrdom:</strong> boundaryless availability treated as proof of care.</li></ul>
+    </div>
+  </div>
+
+  <div class="footer"><span>Humanistic vocabulary is not enough; observable structures must protect dignity, truth and agency</span><span class="page-no">2 / 3</span></div>
+</section>
+
+<section class="sheet">
+  <div class="kicker">Observation and reflection tool</div>
+  <h2>Distinguish the tool from its use</h2>
+  <p class="deck small">A lecture, test, competition or consequence is not inherently anti-Ikeda. Ask what purpose it serves, how power is exercised and what students become able to do.</p>
+
+  <div class="box soft">
+    <h3>Not automatically non-examples</h3>
+    <div class="notban">
+      <div class="tool"><b>LECTURE</b><span class="yes"><strong>Can align:</strong> clear explanation equips later inquiry.</span><span class="no"><strong>Misaligns:</strong> authority silences questions or treats knowledge as an end.</span></div>
+      <div class="tool"><b>TEST</b><span class="yes"><strong>Can align:</strong> reveals mastery and guides feedback.</span><span class="no"><strong>Misaligns:</strong> rank defines worth or recall crowds out understanding.</span></div>
+      <div class="tool"><b>COMPETITION</b><span class="yes"><strong>Can align:</strong> challenge promotes disciplined excellence.</span><span class="no"><strong>Misaligns:</strong> winning requires another person’s diminishment.</span></div>
+      <div class="tool"><b>FIRM BOUNDARY</b><span class="yes"><strong>Can align:</strong> protects dignity, truth and safety.</span><span class="no"><strong>Misaligns:</strong> control, fear or humiliation becomes the method.</span></div>
+    </div>
+  </div>
+
+  <div class="grid32" style="margin-top:9px">
+    <div>
+      <h3>Walk-through: red flag → better question</h3>
+      <table class="observer">
+        <thead><tr><th>What you observe</th><th>Ask next</th></tr></thead>
+        <tbody>
+          <tr><td class="red">Students repeat the teacher’s moral conclusion.</td><td class="green">What evidence could challenge it? Are dissenting interpretations genuinely possible?</td></tr>
+          <tr><td class="red">The room is busy, collaborative and cheerful.</td><td class="green">What exact disciplinary knowledge is each student gaining and demonstrating?</td></tr>
+          <tr><td class="red">A discussion reaches quick agreement.</td><td class="green">Were important differences explored, represented fairly and allowed to remain?</td></tr>
+          <tr><td class="red">The teacher is exceptionally warm and available.</td><td class="green">Are expectations, boundaries and support equitable and sustainable?</td></tr>
+          <tr><td class="red">Students complete a service or global project.</td><td class="green">Who defined the need? What was useful to the community? What relationship continues?</td></tr>
+          <tr><td class="red">Discipline is called “restorative.”</td><td class="green">Was harm stopped, impact heard, responsibility accepted and repair completed?</td></tr>
+          <tr><td class="red">Results and university destinations are impressive.</td><td class="green">Who is unseen or excluded? Can students use knowledge wisely beyond the credential?</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <div class="box warm">
+        <h3>Three-step interpretation</h3>
+        <div class="funnel">
+          <div><b>1 · NOTICE</b>Describe behavior without guessing intent.</div><div class="arr">›</div>
+          <div><b>2 · TEST</b>Check dignity, dialogue, wisdom and contribution.</div><div class="arr">›</div>
+          <div><b>3 · SHIFT</b>Change the structure—not merely the slogan.</div>
+        </div>
+        <p class="tiny">One observation is not a verdict. Look for repeated patterns, student experience and the distribution of voice, challenge and consequence.</p>
+      </div>
+      <div class="box coral" style="margin-top:7px">
+        <h3>Six-sentence diagnostic</h3>
+        <ul class="small"><li>Students principally <strong>obey</strong> rather than inquire.</li><li>They <strong>repeat</strong> rather than understand.</li><li>They <strong>agree</strong> rather than encounter difference.</li><li>They <strong>perform virtue</strong> rather than create value.</li><li>They <strong>acquire status</strong> rather than contribute.</li><li>They <strong>avoid difficulty</strong> rather than transform through it.</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-top:9px">
+    <div class="box ink">
+      <h3>Use with a team</h3>
+      <p class="small"><strong>Choose one recurring classroom routine.</strong> Name the non-example risk it could drift toward. Then redesign one concrete feature: the question, participation structure, assessment evidence, consequence or community relationship.</p>
+      <p class="tiny" style="color:#d8e7e7;margin-bottom:2px">Routine to examine:</p>
+      <div class="write-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div>
+    </div>
+    <div class="box">
+      <h3>Source basis</h3>
+      <div class="sources">
+        <p><strong>[1]</strong> D. Ikeda, “Thoughts on Education for Global Citizenship,” Teachers College, 1996. <a href="https://www.daisakuikeda.org/sub/resources/works/lect/lect-08.html">daisakuikeda.org/…/lect-08</a></p>
+        <p><strong>[2]</strong> “Soka Education in Practice”: teacher–student trust, belief and life-to-life interaction. <a href="https://www.daisakuikeda.org/main/educator/edu/edu-04.html">daisakuikeda.org/…/edu-04</a></p>
+        <p><strong>[3]</strong> Ikeda Center, “The Four Aspects of Daisaku Ikeda’s Education Philosophy”: dialogue, global citizenship, value creation and creative coexistence. <a href="https://www.ikedacenter.org/resources/four-aspects-daisaku-ikedas-education-philosophy">ikedacenter.org/resources/…</a></p>
+        <p><strong>[4]</strong> J. Goulah &amp; R. Kartha, “Wisdom and Contemplative Effort in Ikeda Daisaku’s Philosophy of Human Education,” 2026: secular human education, mutual growth and knowledge–wisdom distinction. <a href="https://doi.org/10.25035/jche.03.02.09">doi:10.25035/jche.03.02.09</a></p>
+      </div>
+      <p class="tiny" style="margin:5px 0 0;padding-top:5px;border-top:1px solid #d7e0df"><strong>Interpretive limit:</strong> these non-examples are analytical contrasts, not quotations or an official Soka evaluation instrument. Context, implementation and student experience determine whether a practice embodies or contradicts the philosophy.</p>
+    </div>
+  </div>
+
+  <div class="footer"><span>Visual field guide · original diagrams · prepared August 2026</span><span class="page-no">3 / 3</span></div>
+</section>
+
+</body>
+</html>

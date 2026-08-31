@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>A Secondary School for Value Creation</title>
+<style>
+  @page { size: Letter; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #dfe7e8; }
+  body { font-family: Arial, Helvetica, sans-serif; color: #172b35; font-size: 9.15pt; line-height: 1.27; }
+  .sheet { width: 8.5in; height: 11in; margin: 0 auto 14px; padding: .42in .5in .38in; background: #fffdf8; position: relative; overflow: hidden; page-break-after: always; }
+  .sheet:last-child { page-break-after: auto; }
+  h1, h2, h3, p { margin-top: 0; }
+  h1 { margin-bottom: 7px; font-family: Georgia, serif; font-size: 29pt; line-height: .98; color: #173f52; letter-spacing: -.6px; }
+  h2 { margin: 0 0 8px; font-family: Georgia, serif; font-size: 18.5pt; line-height: 1.05; color: #173f52; }
+  h3 { margin: 0 0 4px; font-size: 10.2pt; line-height: 1.1; text-transform: uppercase; letter-spacing: .7px; color: #0d6b69; }
+  p { margin-bottom: 5px; }
+  ul { margin: 4px 0 5px 16px; padding: 0; }
+  li { margin-bottom: 2.5px; }
+  strong { color: #163d4c; }
+  .kicker { margin-bottom: 7px; color: #0d6b69; font-weight: 700; text-transform: uppercase; letter-spacing: 1.8px; font-size: 8.3pt; }
+  .deck { max-width: 6.85in; margin-bottom: 10px; color: #48606a; font-size: 11.2pt; line-height: 1.3; }
+  .byline { max-width: 7.15in; margin: -4px 0 9px; color: #0d6b69; font-size: 7.8pt; line-height: 1.2; font-weight: 700; letter-spacing: .15px; }
+  .rule { height: 4px; width: .65in; margin: 5px 0 10px; background: #d69d37; border-radius: 3px; }
+  .box { border: 1px solid #b9cbcd; border-radius: 9px; padding: 9px 10px; background: #fff; }
+  .soft { background: #eff6f4; border-color: #b9d6d1; }
+  .warm { background: #fff5dc; border-color: #e5c77f; }
+  .coral { background: #fff0ea; border-color: #e8b5a2; }
+  .ink { background: #173f52; border-color: #173f52; color: white; }
+  .ink strong, .ink h3 { color: #fff; }
+  .ink p { color: #eef6f6; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .grid32 { display: grid; grid-template-columns: 1.5fr 1fr; gap: 10px; }
+  .grid23 { display: grid; grid-template-columns: 1fr 1.5fr; gap: 10px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .tiny { font-size: 7.7pt; line-height: 1.22; color: #50636b; }
+  .small { font-size: 8.3pt; }
+  .label { display: inline-block; padding: 2px 6px 1px; margin-right: 4px; border-radius: 9px; color: white; font-size: 6.8pt; line-height: 1.2; font-weight: 800; letter-spacing: .55px; vertical-align: 1px; }
+  .ikeda { background: #173f52; }
+  .practice { background: #0d6b69; }
+  .proposal { background: #d18a22; }
+  .legend { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; padding: 6px 8px; border: 1px solid #d5dfdf; border-radius: 8px; background: #fafcfb; font-size: 7.6pt; color: #465c64; }
+  .quote { margin: 8px 0; padding: 8px 11px; border-left: 4px solid #d69d37; background: #fff7e7; color: #29434e; font-family: Georgia, serif; font-size: 10.2pt; line-height: 1.28; }
+  .caption { margin-top: 4px; color: #536970; font-size: 7.3pt; line-height: 1.2; }
+  .footer { position: absolute; left: .5in; right: .5in; bottom: .17in; display: flex; justify-content: space-between; color: #6b7d83; font-size: 7pt; }
+  .page-no { font-weight: 700; color: #173f52; }
+  .northstar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin: 8px 0 10px; }
+  .northstar .cell { min-height: 72px; padding: 7px; border-radius: 8px; border-top: 5px solid #0d6b69; background: #eff6f4; }
+  .northstar .cell:nth-child(2) { border-top-color: #d69d37; background: #fff5dc; }
+  .northstar .cell:nth-child(3) { border-top-color: #d77452; background: #fff0ea; }
+  .northstar .cell:nth-child(4) { border-top-color: #173f52; background: #edf1f4; }
+  .northstar b { display: block; margin-bottom: 3px; font-size: 9.2pt; color: #173f52; }
+  .northstar span { font-size: 7.55pt; line-height: 1.18; color: #435860; }
+  .floor-wrap { border-radius: 11px; padding: 8px; background: #eaf3f1; border: 1px solid #bed4d0; }
+  .floor { display: grid; grid-template-columns: 1fr 2.2fr .95fr; grid-template-rows: 33px 1fr 41px; gap: 6px; height: 274px; }
+  .zone { position: relative; display: flex; align-items: center; justify-content: center; padding: 5px; border: 1.4px solid #6f9696; border-radius: 6px; background: #fff; text-align: center; color: #23434d; font-size: 7.2pt; font-weight: 700; }
+  .instruction { grid-column: 1 / 4; background: #173f52; color: white; border-color: #173f52; }
+  .library { grid-column: 1; grid-row: 2; background: #fff5dc; border-color: #d5aa55; }
+  .inquiry { grid-column: 2; grid-row: 2; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, 1fr); gap: 7px; padding: 10px; background: #f8fbfa; }
+  .table { display: flex; align-items: center; justify-content: center; border-radius: 28px; background: #d6ebe6; border: 1px solid #7fb7ab; font-size: 6.9pt; font-weight: 800; color: #28544f; }
+  .map { grid-column: 3; grid-row: 2; background: #fff0ea; border-color: #d89a83; }
+  .reflect { grid-column: 1; grid-row: 3; background: #edf1f4; border-color: #94a8b2; }
+  .commons { grid-column: 2; grid-row: 3; background: #fff; }
+  .teacher { grid-column: 3; grid-row: 3; background: #edf1f4; border-color: #94a8b2; }
+  .feel { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; margin-top: 8px; }
+  .feel div { padding: 7px 8px; border-radius: 8px; background: #fff; border: 1px solid #d7e0df; }
+  .feel b { display: block; margin-bottom: 3px; color: #0d6b69; }
+  .cycle { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; margin: 7px 0 10px; }
+  .step { position: relative; min-height: 93px; padding: 24px 5px 6px; border-radius: 8px; background: #eff6f4; border: 1px solid #bfd7d2; text-align: center; }
+  .step:nth-child(2n) { background: #fff5dc; border-color: #e2c47a; }
+  .num { position: absolute; top: -8px; left: 50%; transform: translateX(-50%); width: 27px; height: 27px; padding-top: 5px; border-radius: 50%; background: #173f52; color: white; font-weight: 800; }
+  .step b { display: block; margin-bottom: 3px; color: #173f52; font-size: 8pt; }
+  .step .time { display: block; margin-bottom: 3px; color: #d06e4e; font-size: 6.8pt; font-weight: 800; }
+  .step p { margin: 0; color: #42575e; font-size: 6.95pt; line-height: 1.15; }
+  .lesson-table { width: 100%; border-collapse: collapse; font-size: 7.75pt; line-height: 1.2; }
+  .lesson-table th { padding: 5px 6px; background: #173f52; color: white; text-align: left; }
+  .lesson-table td { padding: 5px 6px; border-bottom: 1px solid #d8e1e0; vertical-align: top; }
+  .lesson-table tr:nth-child(even) td { background: #f4f8f7; }
+  .lesson-table .mins { width: .57in; color: #0d6b69; font-weight: 800; white-space: nowrap; }
+  .lesson-table .move { width: 1.45in; font-weight: 700; color: #173f52; }
+  .strategy { display: grid; grid-template-columns: repeat(2, 1fr); gap: 7px; }
+  .practice-card { min-height: 81px; padding: 8px 9px; border: 1px solid #cad8d8; border-radius: 8px; background: white; }
+  .practice-card .icon { float: left; width: 25px; height: 25px; margin: 0 7px 5px 0; border-radius: 50%; background: #0d6b69; color: #fff; text-align: center; padding-top: 5px; font-weight: 800; }
+  .practice-card b { display: block; margin-bottom: 2px; color: #173f52; }
+  .practice-card p { margin: 0; color: #4b6067; font-size: 7.5pt; line-height: 1.18; }
+  .assessment { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; margin-top: 6px; }
+  .lens { min-height: 70px; padding: 7px; border-radius: 50% 50% 9px 9px; border: 1px solid #bad1cd; background: #eff6f4; text-align: center; }
+  .lens:nth-child(2) { background: #fff5dc; border-color: #e1c178; }
+  .lens:nth-child(3) { background: #fff0ea; border-color: #e1ad99; }
+  .lens:nth-child(4) { background: #edf1f4; border-color: #aebec5; }
+  .lens b { display: block; margin: 2px 0 3px; font-size: 8pt; }
+  .lens span { color: #4a5e66; font-size: 6.8pt; line-height: 1.15; }
+  .repair { display: flex; align-items: center; gap: 5px; margin-top: 6px; }
+  .repair .r { flex: 1; min-height: 49px; padding: 7px 5px; border-radius: 7px; background: #173f52; color: white; text-align: center; font-size: 7.1pt; }
+  .repair .arrow { color: #d18a22; font-size: 13pt; font-weight: 800; }
+  .timeline { display: grid; grid-template-columns: 58px 1fr; gap: 0 8px; margin-top: 7px; }
+  .t-time { padding: 5px 3px; border-right: 2px solid #b8cdca; color: #0d6b69; font-size: 7.2pt; font-weight: 800; text-align: right; }
+  .t-event { margin-bottom: 4px; padding: 5px 7px; border-radius: 6px; background: #eff6f4; border-left: 5px solid #0d6b69; font-size: 7.45pt; }
+  .t-event.core { background: #edf1f4; border-left-color: #173f52; }
+  .t-event.gold { background: #fff5dc; border-left-color: #d69d37; }
+  .t-event.coralbg { background: #fff0ea; border-left-color: #d77452; }
+  .week { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-top: 7px; }
+  .day { min-height: 88px; padding: 6px; border-radius: 7px; border-top: 5px solid #173f52; background: #edf1f4; }
+  .day:nth-child(2), .day:nth-child(3) { border-top-color: #0d6b69; background: #eff6f4; }
+  .day:nth-child(4) { border-top-color: #d69d37; background: #fff5dc; }
+  .day:nth-child(5) { border-top-color: #d77452; background: #fff0ea; }
+  .day b { display: block; margin-bottom: 4px; font-size: 7.9pt; }
+  .day span { display: block; color: #4d626a; font-size: 6.8pt; line-height: 1.15; }
+  .guardrails { display: grid; grid-template-columns: 1fr 1fr; gap: 5px 10px; }
+  .guardrails div { position: relative; padding-left: 14px; font-size: 7.4pt; line-height: 1.17; }
+  .guardrails div:before { content: "✓"; position: absolute; left: 0; color: #0d6b69; font-weight: 800; }
+  .sources { columns: 2; column-gap: 18px; font-size: 6.75pt; line-height: 1.2; color: #4c6067; }
+  .sources p { break-inside: avoid; margin-bottom: 5px; }
+  .sources a { color: #16596c; text-decoration: none; }
+  .source-note { margin-top: 5px; padding-top: 5px; border-top: 1px solid #d2dddd; font-size: 6.7pt; color: #607178; }
+  @media print {
+    html, body { background: white; }
+    .sheet { margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<section class="sheet">
+  <div class="kicker">Design brief · secondary education</div>
+  <h1>A Secondary School<br>for Value Creation</h1>
+  <div class="rule"></div>
+  <p class="deck">An evidence-grounded reconstruction of Daisaku Ikeda’s educational philosophy: rigorous learning directed toward student happiness, human dignity, peace and contribution.</p>
+  <p class="byline">Prepared by Peter Bjork, M.Ed., DePaul University - College of Education - PhD in Value-Creating Education for Global Citizens</p>
+
+  <div class="legend">
+    <strong>Evidence code</strong>
+    <span><i class="label ikeda">IKEDA</i>directly grounded in Ikeda’s stated philosophy</span>
+    <span><i class="label practice">PRACTICE</i>documented Soka-school precedent</span>
+    <span><i class="label proposal">PROPOSAL</i>this handout’s concrete reconstruction</span>
+  </div>
+
+  <div class="quote"><span class="label ikeda">IKEDA</span> “The fundamental task of education must be to ensure that knowledge serves to further the cause of human happiness and peace.” <span class="tiny">—Teachers College lecture, 1996 [1]</span></div>
+
+  <h3>The north star</h3>
+  <div class="northstar">
+    <div class="cell"><b>Purpose · happiness</b><span>Not constant comfort: the lifelong capacity to create meaning, benefit oneself and contribute to others.</span></div>
+    <div class="cell"><b>Method · dialogue</b><span>Teacher and learner develop through trust, questioning, listening and mutual growth—not one-way transmission.</span></div>
+    <div class="cell"><b>Intellect · wisdom</b><span>Knowledge remains indispensable; students learn to direct it with judgment, responsibility and humane purpose.</span></div>
+    <div class="cell"><b>Horizon · citizenship</b><span>Wisdom to see interdependence, courage to meet difference, compassion that reaches beyond proximity.</span></div>
+  </div>
+
+  <div class="grid32">
+    <div>
+      <h3><span class="label proposal">PROPOSAL</span>The ideal classroom</h3>
+      <div class="floor-wrap">
+        <div class="floor">
+          <div class="zone instruction">INSTRUCTION + SEMINAR WALL · explicit teaching, shared text, whole-class dialogue</div>
+          <div class="zone library">READING<br>+ QUIET<br>REFLECTION</div>
+          <div class="zone inquiry">
+            <div class="table">TEAM 1</div><div class="table">TEAM 2</div>
+            <div class="table">TEAM 3</div><div class="table">TEAM 4</div>
+            <div class="table">TEAM 5</div><div class="table">PROTOTYPE</div>
+          </div>
+          <div class="zone map">LOCAL ↔ GLOBAL MAP<br><br>questions, partners, evidence, languages</div>
+          <div class="zone reflect">1:1<br>CHECK-IN</div>
+          <div class="zone commons">COMMONS · evidence wall + student work + revision histories</div>
+          <div class="zone teacher">TEACHER<br>BASE AT EDGE</div>
+        </div>
+      </div>
+      <p class="caption">Movable furniture supports direct instruction, seminar and inquiry. The teacher remains intellectually active and relationally present; the desk is not a throne. Original schematic—not an official Soka layout.</p>
+    </div>
+    <div>
+      <div class="box soft">
+        <h3>Design invariants</h3>
+        <ul class="small">
+          <li><strong>Every learner is known.</strong> An advisor tracks strengths, concerns and growth.</li>
+          <li><strong>High care + high challenge.</strong> Belief in potential never means lowering standards.</li>
+          <li><strong>Knowledge has a destination.</strong> Lessons ask what learning enables us to understand, create or repair.</li>
+          <li><strong>Difference is educative.</strong> Disagreement is examined, not feared or forced into consensus.</li>
+          <li><strong>The local community is a text.</strong> Nearby realities open onto global interdependence.</li>
+          <li><strong>Beauty matters.</strong> Literature, art, music, craft and well-made work cultivate sensibility.</li>
+        </ul>
+      </div>
+      <div class="feel">
+        <div><b>Looks like</b><span class="tiny">annotated texts, models, data, student revisions, mixed modes of participation</span></div>
+        <div><b>Sounds like</b><span class="tiny">precise explanation, genuine questions, evidence-based dissent, encouragement</span></div>
+        <div><b>Feels like</b><span class="tiny">dignity, intellectual seriousness, productive struggle, belonging without conformity</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"><span>Evidence-grounded reconstruction · not an official Ikeda or Soka-school blueprint</span><span class="page-no">1 / 4</span></div>
+</section>
+
+<section class="sheet">
+  <div class="kicker">The lesson</div>
+  <h2>A 60-minute value-creating lesson</h2>
+  <p class="deck small">Dialogue does not replace subject teaching. The cycle moves from human connection to explicit disciplinary knowledge, inquiry, encounter with difference, useful action and reflective self-revision.</p>
+
+  <div class="cycle">
+    <div class="step"><span class="num">1</span><b>Connect</b><span class="time">0–4 min</span><p>Greet, notice, recall. Establish emotional and intellectual presence.</p></div>
+    <div class="step"><span class="num">2</span><b>Question</b><span class="time">4–9</span><p>Frame a consequential problem with more than one plausible view.</p></div>
+    <div class="step"><span class="num">3</span><b>Teach</b><span class="time">9–21</span><p>Model the concept, method or disciplinary tool novices need.</p></div>
+    <div class="step"><span class="num">4</span><b>Inquire</b><span class="time">21–37</span><p>Teams analyze, calculate, interpret or build—with accountable roles.</p></div>
+    <div class="step"><span class="num">5</span><b>Dialogue</b><span class="time">37–47</span><p>Test claims across perspectives; listen for what could change one’s view.</p></div>
+    <div class="step"><span class="num">6</span><b>Create value</b><span class="time">47–56</span><p>Apply knowledge to a decision, explanation, design or contribution.</p></div>
+    <div class="step"><span class="num">7</span><b>Reflect</b><span class="time">56–60</span><p>Show individual learning; name revision and next responsibility.</p></div>
+  </div>
+  <p class="caption"><span class="label proposal">PROPOSAL</span>Time is a design constraint, not doctrine. Shorter or longer blocks can preserve the same intellectual arc.</p>
+
+  <div class="grid32" style="margin-top:9px">
+    <div>
+      <h3>Worked example · mathematics + environmental science</h3>
+      <div class="box warm" style="margin-bottom:7px">
+        <strong>Driving question:</strong> Can our school cut lunchtime food waste by 40% without reducing nutrition or shifting cost unfairly?<br>
+        <span class="tiny"><strong>Learning:</strong> percentage change, sampling error, proportional reasoning, material flows, stakeholder trade-offs. <strong>Product:</strong> a quantified 1-page proposal for the cafeteria team.</span>
+      </div>
+      <table class="lesson-table">
+        <thead><tr><th>Time</th><th>Teacher move</th><th>Student evidence</th></tr></thead>
+        <tbody>
+          <tr><td class="mins">0–4</td><td class="move">Connect</td><td>Privately estimate yesterday’s waste from a photograph; pair-check assumptions.</td></tr>
+          <tr><td class="mins">4–9</td><td class="move">Question</td><td>Identify who is affected: diners, staff, growers, budget holders, landfill neighbors.</td></tr>
+          <tr><td class="mins">9–21</td><td class="move">Teach precisely</td><td>Follow a worked example; distinguish 40 percentage points from a 40% reduction; critique a biased sample.</td></tr>
+          <tr><td class="mins">21–37</td><td class="move">Coach inquiry</td><td>Calculate a baseline and confidence limits from a supplied 10-day dataset; compare two interventions.</td></tr>
+          <tr><td class="mins">37–47</td><td class="move">Structure dialogue</td><td>Use stakeholder roles; make a claim, cite data, restate a contrary view fairly, then respond.</td></tr>
+          <tr><td class="mins">47–56</td><td class="move">Demand usefulness</td><td>Select one action, quantify expected impact and cost, state one risk and a 2-week test.</td></tr>
+          <tr><td class="mins">56–60</td><td class="move">Make learning visible</td><td>Exit slip: one corrected calculation, one view changed by evidence, one unresolved question.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <div class="box soft">
+        <h3>Dialogue protocol</h3>
+        <ol class="small" style="margin:4px 0 5px 18px;padding:0">
+          <li><strong>Claim:</strong> “Our evidence suggests…”</li>
+          <li><strong>Listen:</strong> “I hear your concern is…”</li>
+          <li><strong>Test:</strong> “What would count against our view?”</li>
+          <li><strong>Bridge:</strong> “We agree on…; we differ on…”</li>
+          <li><strong>Revise:</strong> “I now think… because…”</li>
+        </ol>
+        <p class="tiny">No forced consensus. Courage includes respectful disagreement; wisdom includes changing one’s mind.</p>
+      </div>
+      <div class="box coral" style="margin-top:7px">
+        <h3>Success criteria</h3>
+        <ul class="small">
+          <li>Mathematics is accurate and units are clear.</li>
+          <li>Evidence and uncertainty are distinguished.</li>
+          <li>A competing view is represented fairly.</li>
+          <li>The proposal creates plausible personal and social benefit.</li>
+          <li>The student can name what they revised.</li>
+        </ul>
+      </div>
+      <div class="box ink" style="margin-top:7px">
+        <h3>Teacher’s closing question</h3>
+        <p>“What can this knowledge now help us do wisely—here, with the people actually affected?”</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"><span>Subject mastery → wise application → reflection and renewed inquiry</span><span class="page-no">2 / 4</span></div>
+</section>
+
+<section class="sheet">
+  <div class="kicker">The teaching strategy</div>
+  <h2>High challenge, high care, shared growth</h2>
+  <p class="deck small"><span class="label ikeda">IKEDA</span>The humanity of the teacher is central, and trust begins with the teacher’s belief in students. <span class="label practice">PRACTICE</span>Tokyo Soka High School names human capacity, dialogue, intellect and social capacity among its aims. [2, 5]</p>
+
+  <div class="strategy">
+    <div class="practice-card"><span class="icon">1</span><b>Know the learner; earn trust</b><p>Use names, interests, work history and regular 1:1 check-ins. Encourage specifically. Maintain professional boundaries; never make care performative.</p></div>
+    <div class="practice-card"><span class="icon">2</span><b>Teach the discipline explicitly</b><p>State the concept, model expert thinking, check understanding, then release responsibility. Humanism is not intellectual vagueness.</p></div>
+    <div class="practice-card"><span class="icon">3</span><b>Design real dialogue</b><p>Use rich questions, preparation time, evidence, turn structures and metacognitive reflection. Invite dissent; intervene when dignity or facts are attacked.</p></div>
+    <div class="practice-card"><span class="icon">4</span><b>Make cooperation accountable</b><p>Assign roles that rotate—facilitator, skeptic, analyst, connector. Require both a shared product and individual evidence of understanding.</p></div>
+    <div class="practice-card"><span class="icon">5</span><b>Link local and global</b><p>Begin with a nearby system, person or place; trace its connections to human rights, peace, environment and development. Return to feasible local action.</p></div>
+    <div class="practice-card"><span class="icon">6</span><b>Normalize revision</b><p>Give feedback on the next move. Preserve drafts and reflection. Praise courage, accuracy and improvement—not compliance or a fixed “good student” identity.</p></div>
+  </div>
+
+  <div class="grid2" style="margin-top:9px">
+    <div class="box soft">
+      <h3><span class="label proposal">PROPOSAL</span>Assessment through four lenses</h3>
+      <div class="assessment">
+        <div class="lens"><b>Mastery</b><span>accurate knowledge, technique, vocabulary</span></div>
+        <div class="lens"><b>Reasoning</b><span>evidence, inference, uncertainty, critique</span></div>
+        <div class="lens"><b>Dialogue</b><span>listening, fair representation, constructive response</span></div>
+        <div class="lens"><b>Application</b><span>usefulness, consequence, revision, transfer</span></div>
+      </div>
+      <p class="tiny" style="margin:6px 0 0"><strong>Guardrail:</strong> grade observable work—not beliefs, personality, agreeableness, religious identity or extroversion. Subject mastery remains non-negotiable; schools set weights by course and task.</p>
+    </div>
+    <div class="box warm">
+      <h3>Plan every lesson with 6 questions</h3>
+      <ol class="small" style="margin:4px 0 0 18px;padding:0">
+        <li>What exact disciplinary knowledge must students gain?</li>
+        <li>Why could this matter to human life or the world?</li>
+        <li>What will I explain or model directly?</li>
+        <li>Where will students encounter a meaningful difference?</li>
+        <li>What will they create, decide, explain or improve?</li>
+        <li>What individual evidence will prove learning?</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="grid23" style="margin-top:9px">
+    <div class="box coral">
+      <h3>Restorative discipline with boundaries</h3>
+      <p class="small">Dignity forbids humiliation; it does not forbid consequences. Protect safety first, establish facts, hear impact, require repair and support a return to learning.</p>
+      <div class="repair">
+        <div class="r"><b>Protect</b><br>stop harm</div><div class="arrow">›</div>
+        <div class="r"><b>Understand</b><br>facts + needs</div><div class="arrow">›</div>
+        <div class="r"><b>Repair</b><br>make amends</div><div class="arrow">›</div>
+        <div class="r"><b>Rejoin</b><br>restore trust</div>
+      </div>
+    </div>
+    <div class="box ink">
+      <h3>The teacher’s day-to-day craft</h3>
+      <div class="grid2 small" style="gap:5px 12px">
+        <ul><li>Greet students at the threshold.</li><li>Scan who is silent, absent or thriving.</li><li>Teach one idea with exceptional clarity.</li><li>Ask a question whose answer is not staged.</li></ul>
+        <ul><li>Confer with one learner about their work.</li><li>Record one actionable observation.</li><li>Exchange evidence with a colleague.</li><li>Reflect: “What did students teach me?”</li></ul>
+      </div>
+      <p class="tiny" style="color:#dbe8e9;margin:2px 0 0">Mutual growth does not erase adult responsibility: the teacher still protects standards, time, truth and safety.</p>
+    </div>
+  </div>
+
+  <div class="footer"><span>Trust is the basis; rigor is the promise; contribution is the direction</span><span class="page-no">3 / 4</span></div>
+</section>
+
+<section class="sheet">
+  <div class="kicker">The school day</div>
+  <h2>Rhythm, culture and guardrails</h2>
+  <p class="deck small"><span class="label practice">PRACTICE</span>Tokyo Soka High School documents morning reading/homeroom, six periods, lunch, cleaning and clubs. The timetable below is a transferable 5-block reconstruction—not a report of the current school day. [6, 7]</p>
+
+  <div class="grid23">
+    <div>
+      <h3><span class="label proposal">PROPOSAL</span>A sample day</h3>
+      <div class="timeline">
+        <div class="t-time">08:20–08:40</div><div class="t-event gold"><strong>Advisory + reading.</strong> Quiet reading, check-in, one purpose for the day; scheduled individual conferences.</div>
+        <div class="t-time">08:45–09:45</div><div class="t-event core"><strong>Core 1.</strong> Language / humanities: close reading, writing, seminar.</div>
+        <div class="t-time">09:55–10:55</div><div class="t-event core"><strong>Core 2.</strong> Mathematics: explicit modeling, practice, application.</div>
+        <div class="t-time">11:05–12:05</div><div class="t-event core"><strong>Core 3.</strong> Science: investigation, explanation, evidence.</div>
+        <div class="t-time">12:05–13:00</div><div class="t-event coralbg"><strong>Lunch + community.</strong> Unhurried meal, peer life, optional clubs or support.</div>
+        <div class="t-time">13:00–14:00</div><div class="t-event core"><strong>Core 4.</strong> Social studies / languages: local-global inquiry and dialogue.</div>
+        <div class="t-time">14:10–15:10</div><div class="t-event gold"><strong>Core 5 / studio.</strong> Arts, physical education, technology or interdisciplinary project.</div>
+        <div class="t-time">15:10–15:25</div><div class="t-event"><strong>Care for place.</strong> Shared cleanup, reset resources, practical stewardship—not punishment.</div>
+        <div class="t-time">15:25–16:20</div><div class="t-event coralbg"><strong>Clubs / tutorial / exhibition.</strong> Student leadership, practice, mentoring and public work.</div>
+      </div>
+    </div>
+    <div>
+      <div class="box soft">
+        <h3>The people system</h3>
+        <ul class="small">
+          <li><strong>Advisory:</strong> 12–16 students; one adult stays with the group for multiple years where possible.</li>
+          <li><strong>Protected teacher learning:</strong> 2 common planning periods weekly; examine student work, not impressions.</li>
+          <li><strong>Family connection:</strong> communicate strengths before problems; invite knowledge and language from home.</li>
+          <li><strong>Community partners:</strong> co-design questions and receive useful products; service is reciprocal, not charity theatre.</li>
+          <li><strong>Student voice:</strong> real input on routines, projects and climate—within transparent adult responsibility.</li>
+        </ul>
+      </div>
+      <div class="box warm" style="margin-top:7px">
+        <h3>Monthly / termly pulse</h3>
+        <p class="small"><strong>Monthly:</strong> public dialogue or arts event; local fieldwork; advisor review of belonging and progress.</p>
+        <p class="small"><strong>Each term:</strong> exhibition of rigorous work; student-led reflection; community partner feedback; faculty study of who is flourishing and who is not.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:8px">A weekly learning rhythm</h3>
+  <div class="week">
+    <div class="day"><b>MON · PURPOSE</b><span>Launch consequential questions; diagnose knowledge; locate the human stakes.</span></div>
+    <div class="day"><b>TUE · KNOWLEDGE</b><span>Build disciplinary concepts, vocabulary and techniques through explicit teaching.</span></div>
+    <div class="day"><b>WED · INQUIRY</b><span>Investigate, calculate, read, experiment and critique evidence with others.</span></div>
+    <div class="day"><b>THU · APPLICATION</b><span>Fieldwork, design, cross-cultural encounter or problem-solving with a real audience.</span></div>
+    <div class="day"><b>FRI · CONTRIBUTION</b><span>Share, receive critique, revise, reflect and decide the next responsibility.</span></div>
+  </div>
+
+  <div class="grid2" style="margin-top:8px">
+    <div class="box coral">
+      <h3>Guardrails against distortion</h3>
+      <div class="guardrails">
+        <div>No doctrinal teaching, worship or personality cult.</div>
+        <div>No forced harmony or suppression of dissent.</div>
+        <div>No “happiness” used to deny grief or struggle.</div>
+        <div>No dialogue used as a substitute for evidence.</div>
+        <div>No care without boundaries or safeguarding.</div>
+        <div>No service that exploits students or communities.</div>
+      </div>
+      <p class="tiny" style="margin:6px 0 0"><span class="label ikeda">IKEDA</span>Ikeda stated that education does not exist for religion; recent scholarship describes his human education as secular and explicitly rejects proselytization in schooling. [2, 4]</p>
+    </div>
+    <div class="box">
+      <h3>Sources and reconstruction note</h3>
+      <div class="sources">
+        <p><strong>[1]</strong> D. Ikeda, “Thoughts on Education for Global Citizenship,” Teachers College, 1996. <a href="https://www.daisakuikeda.org/sub/resources/works/lect/lect-08.html">daisakuikeda.org/…/lect-08</a></p>
+        <p><strong>[2]</strong> “Soka Education in Practice.” <a href="https://www.daisakuikeda.org/main/educator/edu/edu-04.html">daisakuikeda.org/…/edu-04</a></p>
+        <p><strong>[3]</strong> Ikeda Center, “Four Aspects of Daisaku Ikeda’s Education Philosophy.” <a href="https://www.ikedacenter.org/resources/four-aspects-daisaku-ikedas-education-philosophy">ikedacenter.org/resources/…</a></p>
+        <p><strong>[4]</strong> J. Goulah &amp; R. Kartha, “Wisdom and Contemplative Effort…,” <em>Journal of Contemplative &amp; Holistic Education</em>, 2026. <a href="https://doi.org/10.25035/jche.03.02.09">doi:10.25035/jche.03.02.09</a></p>
+        <p><strong>[5]</strong> Tokyo Soka High School, curriculum and four capacities. <a href="https://tokyo-senior.soka.ed.jp/study/curriculum">tokyo-senior.soka.ed.jp/study/curriculum</a></p>
+        <p><strong>[6]</strong> Tokyo Soka High School, Global Citizenship Project report, 2020. <a href="https://tokyo-senior.soka.ed.jp/news/2020/02/22/2814/">tokyo-senior.soka.ed.jp/news/…/2814</a></p>
+        <p><strong>[7]</strong> Tokyo Soka High School, “A day at Soka High School.” <a href="https://tokyo-senior.soka.ed.jp/life/time/">tokyo-senior.soka.ed.jp/life/time</a></p>
+      </div>
+      <p class="source-note"><strong>Interpretive limit:</strong> Ikeda left a philosophy and institutional precedents, not one compulsory classroom layout, lesson sequence or timetable. All items tagged PROPOSAL translate principles into a plausible contemporary secondary-school model and should be tested locally.</p>
+    </div>
+  </div>
+
+  <div class="footer"><span>Printable field guide · original diagrams · sources accessed August 2026</span><span class="page-no">4 / 4</span></div>
+</section>
+
+</body>
+</html>
