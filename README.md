@@ -8,12 +8,14 @@ Prepared by Peter Bjork, M.Ed., DePaul University - College of Education - PhD i
 
 | Figure | Document | Type | HTML | PDF | Pages |
 |---|---|---|---|---|---:|
-| Tsunesaburo Makiguchi | Makiguchi’s Ideas in Day-to-Day Education | Educator guide | [Open](documents/makiguchi-day-to-day-education/index.html) | [Download](documents/makiguchi-day-to-day-education/printable.pdf) | 2 |
+| Tsunesaburo Makiguchi | Makiguchi’s Ideas in Day-to-Day Education | Educator guide | [Open](documents/makiguchi-day-to-day-education/index.html) | [Download](https://88r9uy748d.execute-api.us-east-1.amazonaws.com/makiguchi) | 2 |
 | Tsunesaburo Makiguchi | Makiguchi: Opposing Ideas and Major Critics | Critical perspectives | [Open](documents/makiguchi-opposing-ideas-and-major-critics/index.html) | [Download](documents/makiguchi-opposing-ideas-and-major-critics/printable.pdf) | 3 |
 | Josei Toda | Josei Toda’s Contributions to Education | Historical synthesis | [Open](documents/toda-contributions-to-education/index.html) | [Download](documents/toda-contributions-to-education/printable.pdf) | 3 |
 | Josei Toda | Josei Toda: Criticism and Leading Critics | Critical perspectives | [Open](documents/toda-criticism-and-leading-critics/index.html) | [Download](documents/toda-criticism-and-leading-critics/printable.pdf) | 3 |
 | Daisaku Ikeda | A Secondary School for Value Creation | Evidence-grounded reconstruction | [Open](documents/ikeda-secondary-school/index.html) | [Download](documents/ikeda-secondary-school/printable.pdf) | 4 |
 | Daisaku Ikeda | Non-Examples of an Ikeda Classroom | Visual field guide | [Open](documents/ikeda-classroom-non-examples/index.html) | [Download](documents/ikeda-classroom-non-examples/printable.pdf) | 3 |
+
+The Makiguchi day-to-day printable uses a privacy-minimized tracked redirect so the author can receive an anonymous visit notification. The service retains no raw IP address, location, referrer URL, browser fingerprint, or document activity. Direct access to the repository file bypasses the notification.
 
 Each document has the same stable layout:
 
@@ -72,4 +74,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution workflow.
 
 ## Repository status and rights
 
-This repository begins as private to avoid publishing the documents or granting reuse rights without an explicit decision. No open-source or content license is granted at this time. Repository visibility and licensing can be changed separately when the collaboration model is defined.
+This repository is public for portfolio and collaboration access. No open-source or content license is granted at this time; visibility does not grant permission to reuse, redistribute, or create derivative works.
